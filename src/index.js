@@ -1,3 +1,5 @@
-import './css/signin.css';
+import './styles/index.css';
 
-console.log('index');
+//dynamic import
+document.querySelector('.js-index') && import('./js/index/index').then(resolve => resolve.initIndexPage());
+document.querySelector('.js-signin') && import('./js/signin/index').then(resolve => resolve.initSigninPage());

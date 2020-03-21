@@ -18,13 +18,13 @@ const config = {
             },
             {
                 test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, "css-loader"]
+                use: [MiniCssExtractPlugin.loader, "styles-loader"]
     }
         ]
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "index[hash].css",
+            filename: "index[hash].styles",
         }),
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: [path.resolve(__dirname, './public/**/*')]
