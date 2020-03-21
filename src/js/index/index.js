@@ -1,5 +1,7 @@
-import '../../styles/index/index.css';
+import '../../styles/pages/index.css';
+import animation from './animation';
 
 export const initIndexPage = () => {
-    console.log('initIndexPage');
+    animation();
 };
+
